@@ -42,7 +42,7 @@ function draw()
     {
       for (let i = 0; i < 15; i++)
         {
-          background(255);
+          //background(255);
           pColor[i] = ('gold');
           p0int[i].resetCoordinates(mouseX, mouseY);
           sWatch = 0;
