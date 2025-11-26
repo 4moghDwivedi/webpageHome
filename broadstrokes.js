@@ -23,11 +23,13 @@ function setup() {
 
 function draw() {
 
-
-for (let i = 0; i < numParticles; i++)
+if (frameCount > 30)
   {
-    brushes[i].display();
-    brushes[i].update();
+    for (let i = 0; i < numParticles; i++)
+    {
+      brushes[i].display();
+      brushes[i].update();
+    }
   }
 
   count += 1;
@@ -35,8 +37,8 @@ for (let i = 0; i < numParticles; i++)
   if (count % (60*15) == 0)
     {
 
-      backCol = 1 - backCol;
-      background(backCol*255); 
+      //backCol = 1 - backCol;
+      //background(backCol*255); 
 
       for (let i = 0; i < numParticles; i++)
         {
